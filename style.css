@@ -28,6 +28,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -1px;
 }
 .logo{
 width: 131.83px;
@@ -156,7 +157,7 @@ height: 64px;
     line-height: 20px;
     text-transform: uppercase;
     font-feature-settings: 'ss04' on;
-    color: #030718;
+    color: var(--second-color);
 }
 .hero-text{
     font-weight: 400;
@@ -164,4 +165,189 @@ height: 64px;
     line-height: 20px;
     font-feature-settings: 'ss04' on;
     opacity: 0.3;
+}
+.numbers {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 65px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--second-color);
+}
+.number-section {
+    display: flex;
+    flex-direction: column;
+}
+.section-numeric {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'case' on, 'zero' on;
+    color: var(--prime-color);
+}
+.section-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on;
+    opacity: 0.8;
+}
+.black{
+    color: var(--second-color);
+}
+
+.trades {
+    background-color: var(--second-color);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 80px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%, 40% 95%, 0 95% );
+}
+.trades-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'case' on;
+}
+.trades-line{
+    position: relative;
+    padding-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    font-feature-settings: 'ss04' on, 'case' on, 'zero' on;
+    color: #35FF9E;
+    opacity: 0.9;
+}
+.trades-line::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #35FF9E;
+    opacity: 0.9;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.trades-cards {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    padding-bottom: 25px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--prime-color) var(--second-color);
+}
+.trades-cards::-webkit-scrollbar {
+    height: 6px;
+}
+.trades-cards::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 10px;
+}
+.trades-cards::-webkit-scrollbar-thumb {
+    background: #576bfd;
+    border-radius: 10px;
+}
+.trades-card {
+    width: 299px;
+    height: 208px;
+    padding: 16px;
+    clip-path: polygon(0 0, 85% 0, 100% 25%, 100% 100%, 0 100%);
+    background-color: var(--prime-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: space-between;
+    gap: 56px;
+}
+.card-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: space-between;
+}
+.name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+.spot {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    opacity: 0.4;
+}
+.trades-number {
+}
+.number-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+.number-value {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on, 'case' on, 'zero' on;
+    color: #35FF9E;
+}
+.card-img {
+    width: 160px;
+    height: 100%;
+    background-image: url(/img/Group\ 38.png);
+    background-size: cover;
+    background-position-x: left;
+}
+.card-target {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.target {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    opacity: 0.7;
+}
+.date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    opacity: 0.4;
 }
