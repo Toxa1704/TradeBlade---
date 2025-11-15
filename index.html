@@ -10,18 +10,27 @@
     <section class="navbar">
         <img src="/img/LOGO+text.jpg" alt="logo" class="logo">
         <nav class="navbar-menu">
-            <a href="#" class="menu-nav">Цифры</a>
-            <a href="#" class="menu-nav">Сделки онлайн</a>
-            <a href="#" class="menu-nav">о компании</a>
+            <a href="#numbers" class="menu-nav">Цифры</a>
+            <a href="#trades" class="menu-nav">Сделки онлайн</a>
+            <a href="#about" class="menu-nav">о компании</a>
             <a href="#" class="menu-nav">как начать</a>
-            <a href="#" class="menu-nav">тарифы</a>
+            <a href="#tariffs" class="menu-nav">тарифы</a>
             <a href="#" class="menu-nav">отзывы</a>
-            <a href="#" class="menu-nav">FAQ</a>
+            <a href="#faq" class="menu-nav">FAQ</a>
         </nav>
         <div class="navbar-btns">
             <button type="button" class="exit-btn btn">Вход</button>
             <button type="button" class="registretion-btn btn">Регистрация</button>
         </div>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.39999 9.33324C4.39999 8.81777 4.81786 8.3999 5.33333 8.3999H26.6667C27.1821 8.3999 27.6 8.81777 27.6 9.33324C27.6 9.8487 27.1821 10.2666 26.6667 10.2666H5.33333C4.81786 10.2666 4.39999 9.8487 4.39999 9.33324Z" fill="#E7F7F8"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.39999 16C4.39999 15.4845 4.81786 15.0667 5.33333 15.0667H26.6667C27.1821 15.0667 27.6 15.4845 27.6 16C27.6 16.5154 27.1821 16.9333 26.6667 16.9333H5.33333C4.81786 16.9333 4.39999 16.5154 4.39999 16Z" fill="#E7F7F8"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.39999 22.6665C4.39999 22.151 4.81786 21.7332 5.33333 21.7332H26.6667C27.1821 21.7332 27.6 22.151 27.6 22.6665C27.6 23.182 27.1821 23.5998 26.6667 23.5998H5.33333C4.81786 23.5998 4.39999 23.182 4.39999 22.6665Z" fill="#E7F7F8"/>
+        </svg>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="close">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74035 8.74042C9.10484 8.37593 9.69579 8.37593 10.0603 8.74042L23.2596 21.9398C23.6241 22.3042 23.6241 22.8952 23.2596 23.2597C22.8951 23.6242 22.3042 23.6242 21.9397 23.2597L8.74035 10.0604C8.37586 9.69587 8.37586 9.10491 8.74035 8.74042Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74036 23.2597C8.37587 22.8952 8.37587 22.3043 8.74036 21.9398L21.9397 8.74045C22.3042 8.37596 22.8951 8.37596 23.2596 8.74045C23.6241 9.10494 23.6241 9.69589 23.2596 10.0604L10.0603 23.2597C9.69581 23.6242 9.10485 23.6242 8.74036 23.2597Z" fill="white"/>
+        </svg>
     </section>
     <section class="hero">
         <div class="hero-content">
@@ -37,7 +46,7 @@
             <img src="/img/1.png" alt="image">
         </div>
     </section>
-    <section class="numbers">
+    <section id="numbers">
         <div class="number-section">
             <p class="section-numeric black">
                 Цифры
@@ -71,7 +80,7 @@
             </p>
         </div>
     </section>
-    <section class="trades">
+    <section id="trades">
         <h2 class="trades-title">Прошедшие сделки</h2>
         <div class="trades-line">Онлайн</div>
         <div class="trades-cards" id="tradesScroll">
@@ -216,7 +225,7 @@
         
         </div>
     </section>
-    <section class="about">
+    <section id="about">
         <div class="about-text">
             <h2 class="about-text-title">О компании</h2>
             <p class="about-text-text">Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.<br><br>Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.</p>
@@ -230,7 +239,7 @@
             </form>
         </div>
     </section>
-    <section class="tariffs">
+    <section id="tariffs">
         <div class="tariffs-wrapper">
             <h2 class="tariffs-title">тарифы</h2>
             <div class="block-btns">
@@ -281,6 +290,60 @@
             </div>
         </div>
     </section>
+    <section id="faq">
+        <h2>часто задаваемые вопросы</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+            <p>Что такое TradeBlade</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="faq-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9.5L12 15.5L18 9.5" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/> 
+            </svg>
+            </div>
+            <div class="faq-answer">
+                <p>Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.<br><br>Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+            <p>Что TradeBlade предлагает инвесторам</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="faq-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9.5L12 15.5L18 9.5" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/> 
+            </svg>
+            </div>
+            <div class="faq-answer">
+                <p>Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.<br><br>Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+            <p>Должен ли я перевести свои средства на TradeBlade</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" class="faq-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9.5L12 15.5L18 9.5" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/> 
+            </svg>
+            </div>
+            <div class="faq-answer">
+                <p>Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.<br><br>Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="block-nav">
+            <div class="block-nav-title">Быстрая навигация</div>
+            <nav class="navbar-menu">
+                <a href="#numbers" class="menu-nav">Цифры</a>
+                <a href="#trades" class="menu-nav">Сделки онлайн</a>
+                <a href="#about" class="menu-nav">о компании</a>
+                <a href="#" class="menu-nav">как начать</a>
+                <a href="#tariffs" class="menu-nav">тарифы</a>
+                <a href="#" class="menu-nav">отзывы</a>
+                <a href="#faq" class="menu-nav">FAQ</a>
+            </nav>
+        </div>
+        <div class="block-logo">
+            <img src="/img/LOGO+text.jpg" alt="logo">
+            <p class="logo-text">© 2022 TradeBlade. All rights reserved</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

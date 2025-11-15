@@ -30,6 +30,9 @@ body{
     justify-content: space-between;
     margin-bottom: -1px;
 }
+.burger, .close{
+    display: none;
+}
 .logo{
     width: 131.83px;
     height: 64px;
@@ -76,7 +79,7 @@ body{
     color: var(--action-color);
     transition: box-shadow 0.3s ease-in-out;
 }
-.exit-btn:hover, .registretion-btn:hover, #hero-email-btn:hover, .start:hover, .month:hover{
+.exit-btn:hover, .registretion-btn:hover, #hero-email-btn:hover, .start:hover, .month:hover, .futures:hover, .tariffs-spot:hover{
     box-shadow: 0px 0px 12px var(--action-color);
 }
 .registretion-btn{
@@ -166,7 +169,7 @@ body{
     font-feature-settings: 'ss04' on;
     opacity: 0.3;
 }
-.numbers {
+#numbers {
     max-width: 1440px;
     margin: 0 auto;
     padding: 65px 80px;
@@ -200,7 +203,7 @@ body{
     color: var(--second-color);
 }
 
-.trades {
+#trades {
     background-color: var(--second-color);
     max-width: 1440px;
     margin: 0 auto;
@@ -353,7 +356,7 @@ body{
     opacity: 0.4;
 }
 
-.about {
+#about {
     max-width: 1440px;
     margin: 0 auto;
     padding:60px 80px 90px ;
@@ -401,7 +404,7 @@ body{
     margin-top: 32px;
     display: flex;
 }
-.tariffs{
+#tariffs{
     background-color: var(--second-color);
     padding: 96px 80px;
     display: flex;
@@ -438,10 +441,14 @@ body{
 }
 .tariffs-spot{
     background-color: var(--action-color);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
 }
 .futures{
     background-color: var(--prime-color);
     color: var(--action-color);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
 }
 .block-cards{
     margin-top: 40px;
@@ -569,4 +576,220 @@ li::before {
 }
 .card-vip{
     background-color: var(--prime-color);
+}
+
+
+#faq{
+    color: var(--second-color);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 96px 0;
+}
+#faq h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+.faq-item {
+    margin-top: 12px;
+    padding: 16px ;
+    background-color: #EAEFF0;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+.faq-item:hover{
+    background-color:#b2b2b2 ;
+}
+.faq-item.active {
+    background-color: var(--prime-color);
+    color: #FFFFFF; 
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'ss04' on;
+    opacity: 0.8;
+}
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+}
+.faq-arrow {
+    width: 16px;
+    transition: transform 0.3s ease;
+}
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding-right: 30px;
+}
+.faq-item.active .faq-answer {
+    max-height: 200px; 
+    opacity: 1;
+    margin-top: 10px;
+}
+
+
+.footer{
+    height: 250px;
+    background-color: var(--second-color);
+    padding: 28px 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.block-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.block-nav-title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-feature-settings: 'ss04' on;
+    opacity: 0.4;
+}
+.block-nav .navbar-menu{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    opacity: 0.67;
+}
+.block-logo img{
+    max-width: 165px;
+}
+.block-logo{
+    width: 40%;
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.logo-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width: 740px) and (min-width: 370px){
+    .navbar{
+    max-width: 370px;
+    padding: 0 16px;
+}
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-btns{
+        display: none;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero{
+    max-width: 370px;
+    padding: 0 16px;
+    flex-direction: column-reverse;
+    gap: 0;
+    }
+    .hero-img img{
+        max-width:300px ;
+    }
+    .hero-title{
+    font-size: 35px;
+    line-height: 44px;
+    }
+    .hero-subtitle{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    #hero-email{
+        width: 240px;
+        height: 50px;
+    }
+    #hero-email-btn{
+    width: 102px;
+    border: 1px solid #57E1FF;
+    box-shadow: 0px 0px 4px #57E1FF;
+    border-radius: 3px;
+    }
+    #numbers {
+    max-width: 370px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 24px 16px;
+    }
+    .number-section{
+        margin-top: 40px;
+        max-width: 150px;
+    }
+    .section-numeric{
+        font-size: 35px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+    }
+    .black{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .section-title{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    #trades {
+        background-color: var(--second-color);
+        max-width: 370px;
+        padding: 48px 16px;
+    }
+    .trades-title{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #about {
+        max-width: 370px;
+        padding:24px 16px ;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-text-title{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .about-text-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .cta {
+        width: 356px;
+        height: 218px;
+        padding: 16px;
+    }
+    .cta-text{
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
