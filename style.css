@@ -30,9 +30,7 @@ body{
     justify-content: space-between;
     margin-bottom: -1px;
 }
-.burger, .close{
-    display: none;
-}
+
 .logo{
     width: 131.83px;
     height: 64px;
@@ -691,11 +689,15 @@ li::before {
     line-height: 20px;
     opacity: 0.5;
 }
+.burger, .close {
+    display: none;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 740px) and (min-width: 370px){
     .navbar{
-    max-width: 370px;
+    /* max-width: 370px; */
     padding: 0 16px;
 }
     .navbar-menu{
@@ -710,19 +712,25 @@ li::before {
     }
 
     .hero{
-    max-width: 370px;
+    /* max-width: 370px; */
     padding: 0 16px;
     flex-direction: column-reverse;
+
     gap: 0;
     }
+    .hero-content{
+        height: 360px;
+}
     .hero-img img{
-        max-width:300px ;
+        /* max-width:300px ; */
     }
     .hero-title{
-    font-size: 35px;
-    line-height: 44px;
+        max-width: 370px;
+        font-size: 35px;
+        line-height: 44px;
     }
     .hero-subtitle{
+        /* max-width: 350px; */
         font-size: 16px;
         line-height: 20px;
     }
@@ -791,5 +799,136 @@ li::before {
     .cta-text{
         font-size: 20px;
         line-height: 28px;
+    }
+    #tariffs{
+        padding:40px 16px ;
+    }
+    .block-cards{
+        flex-direction: column;
+    }
+    .tariffs-title{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .card-title{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .list-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .tariffs-btn{
+        width: 167px;
+        height: 44px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .card-standart, .card-vip{
+        width: 346px;
+        height: 440px;
+        padding: 8px;
+    }
+    .card-title{
+        padding-left: 8px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .list-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    li {
+        padding: 8px 8px 8px 32px;
+    }
+    li::before {
+        left: 8px;
+    }
+    .price{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .price-number span {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .start{
+        padding: 16px 24px;
+        height: 52px;
+    }
+    #faq h2{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .faq-question{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .footer{
+        height: 100%;
+        flex-direction: column;
+        padding: 16px;
+    }
+    .block-nav{
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .block-nav .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .block-logo{
+        width: 40%;
+        height: 100%;
+        align-self: flex-start;
+    }
+    .logo-text{
+        margin-top: 40px;
+    }
+.navbar.open{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+    .navbar.open .navbar-menu{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+        position: absolute;
+        top: 0;
+        right: 65px;
+        padding: 40px;
+        background: var(--prime-color);
+        width: 74%;
+        z-index: 10;
+
+    }
+    .navbar.open .navbar-btns {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 24px;
+        position: absolute;
+        top: 0;
+        right: 65px;
+        padding: 40px;
+        background: var(--prime-color);
+        width: 74%;
+        z-index: 10;
+    }
+
+    .navbar.open .close {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 70px;
+        z-index: 20;
+    }
+
+    .navbar.open .burger {
+        display: none;
     }
 }

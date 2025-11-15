@@ -9,3 +9,15 @@ document.querySelectorAll('.faq-question').forEach(item => {
         item.parentElement.classList.toggle('active');
     });
 });
+
+const navbar = document.querySelector('.navbar');
+const burger = document.querySelector('.burger');
+const closeBtn = document.querySelector('.close');
+
+burger.addEventListener('click', () => {
+    navbar.classList.add('open');
+});
+
+closeBtn.addEventListener('click', () => {
+    navbar.classList.remove('open');
+});
